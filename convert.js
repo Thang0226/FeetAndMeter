@@ -15,8 +15,16 @@ for (ind in feet_arr) {
 }
 console.log(meter_arr);
 
+// Create meter_arr2
+let num = 20.0;
+let meter_arr2 = [];
+while (num <= 65) {
+  meter_arr2.push(num);
+  num += 5.0;
+}
+
 let feet_arr2 = new Array(10);
 for (ind in meter_arr) {
-  feet_arr2[ind] = meterToFoot(meter_arr[ind]);
+  feet_arr2[ind] = meterToFoot(meter_arr2[ind]);
 }
 console.log(feet_arr2);
